@@ -12,7 +12,7 @@ var productos = [
 var carrito = [];
 
 
-// Función para mostrar los productos
+// Funcion para mostrar los productos
 function mostrarProductos() {
   var mensaje = "Productos disponibles:\n\n";
   mensaje += "1. Camisa - $5000\n";
@@ -22,16 +22,16 @@ function mostrarProductos() {
 }
 
 
-// Función para agregar productos
+// Funcion para agregar productos
 function agregarProducto() {
   var seguir = true;
 
   while (seguir) {
-    mostrarProductos(); // Mostramos opciones
+    mostrarProductos(); // Mostrar opciones
 
     var opcion = prompt("Ingrese el número del producto que desea comprar (1, 2 o 3):");
 
-    // Verificamos qué producto eligió
+    // Verificar que producto se eligio
     if (opcion == "1") {
       carrito.push({ nombre: "Camisa", precio: 5000 });
       alert("Agregaste una Camisa al carrito.");
@@ -45,8 +45,8 @@ function agregarProducto() {
       alert("Opción inválida. Por favor, ingresá 1, 2 o 3.");
     }
 
-    // Preguntamos si quiere seguir comprando
-    seguir = confirm("¿Querés agregar otro producto?");
+    // Preguntar si quiere seguir comprando
+    seguir = confirm("¿Desea agregar otro producto?");
   }
 }
 
@@ -75,10 +75,10 @@ function mostrarCarrito() {
 function iniciarSimulador() {
   alert("¡Bienvenido al simulador de compras!");
 
-  agregarProducto(); // Paso 1: elige productos
-  mostrarCarrito();  // Paso 2: mostramos resumen
+  agregarProducto(); // elegir producto
+  mostrarCarrito();  // mostrar resumen
 
-  alert("¡Gracias por comprar con nosotros!");
+  alert("¡Gracias por su compra!");
 }
 
 
